@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Patrick+Hand&display=swap');
+
+/* basic reset */
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Patrick Hand', sans-serif;
+}
+
+#title {
+  font-size: 48px;
+}
+
+#players {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 21px;
+}
+
+#player1 {
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  display: flex;
+  font-weight: bold;
+}
+
+#player1 > div, #player2 > div, #activeplayer > div {
+  padding: 10px;
+}
+
+#player2 {
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  display: flex;
+  font-weight: bold;
+}
+
+.name {
+  flex-grow: 7;
+  border-right: 2px solid #f1f1f1;
+}
+
+.score {
+  flex-grow: 3;
+}
+
+.activeplayer {
+  box-shadow: 2px 2px 2px red;
+  border-radius: 10px;
+  display: flex;
+  font-weight: bold;
+}
+
+#gameboard {
+  display: grid;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+#gameboard .squares {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  justify-content: center;
+  grid-gap: 5px;
+}
+
+#gameboard .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+#gameboard .square:hover {
+  background-color: #e1e1e1;
+}
+
+#roundcountercontainer {
+  display: flex;
+  justify-content: center;
+}
+
+#roundcounter {
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#roundcounter > div {
+  padding: 10px;
+}
+
+#round {
+  grow: 8;
+}
+
+#counter {
+  border-left: 2px solid #f1f1f1;
+  grow: 2;
+}
+
+#restart {
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  max-width: 80px;
+  margin: 15px auto 0 auto;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#restart:hover {
+  background-color: #fff;
+  color: #000;
+}
