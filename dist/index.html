@@ -7,14 +7,15 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <h1 class="message"></h1>
     <h1 id="title">Tic Tac Toe</h1>
     <div id="players">
-      <div id="player1">
+      <div class="player activeplayer">
         <div class="name">Player One</div>
         <div class="score"></div>
       </div>
-      <div id="player2">
-        <div class="name">Easy Bot</div>
+      <div class="player">
+        <div class="name">Player 2</div>
         <div class="score"></div>
       </div>
     </div>
@@ -24,7 +25,7 @@
     <div id="roundcountercontainer">
       <h2 id="roundcounter">
         <div id="round">Round</div>
-        <div id="counter">3</div>
+        <div id="counter"></div>
       </h2>
     </div>
     <div id="restart">Restart</div>
