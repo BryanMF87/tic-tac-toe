@@ -1,4 +1,4 @@
-# tic-tac-toe
+# Tic-tac-toe
 
 ## Project Details
 This two player tic-tac-toe app focused on testing my knowledge of ES6 modules, scope and using as little global code as possible.
